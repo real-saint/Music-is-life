@@ -1,10 +1,9 @@
-# Music-is-life
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Music Journey</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     * {
@@ -13,24 +12,29 @@
     body {
       margin: 0;
       font-family: 'Roboto', sans-serif;
-      background: linear-gradient(to bottom right, #000000, #1a1a1a);
+      font-size: 14px;
+      background: url('https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2?auto=format&fit=crop&w=1600&q=80') no-repeat center center fixed;
+      background-size: cover;
       color: #fff;
-      padding: 2rem;
+      padding: 1.5rem;
       scroll-behavior: smooth;
     }
     .container {
       max-width: 1000px;
       margin: 0 auto;
+      background: rgba(0, 0, 0, 0.7);
+      border-radius: 10px;
+      padding: 1.5rem;
     }
     h1, h2 {
       color: #fbbf24;
     }
     .section {
-      margin-bottom: 3rem;
-      padding: 2rem;
-      background: #222;
-      border-radius: 15px;
-      box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+      margin-bottom: 2rem;
+      padding: 1rem;
+      background: rgba(34, 34, 34, 0.85);
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
       opacity: 0;
       transform: translateY(20px);
       animation: fadeInUp 1s forwards;
@@ -61,7 +65,7 @@
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #444;
-  padding: 0.75rem 0;
+  padding: 0.5rem 0;
 }
 .timeline li span:first-child {
   color: #888;
@@ -75,11 +79,11 @@ strong {
 }
 .social-icons {
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 }
 .social-icons a {
-  margin: 0 10px;
-  font-size: 1.5rem;
+  margin: 0 8px;
+  font-size: 1.2rem;
   color: #fbbf24;
   transition: transform 0.3s;
 }
@@ -90,6 +94,7 @@ strong {
 @media (max-width: 600px) {
   body {
     padding: 1rem;
+    font-size: 13px;
   }
   .timeline li {
     flex-direction: column;
